@@ -3,9 +3,10 @@
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
-development:
+
+development: &default
   adapter: sqlite3
-  database: db/development.sqlite3
+  database: surveys_development
   pool: 5
   timeout: 5000
 
