@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @flash.name %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%= @flash.age %>
+</p>
+
+<p>
+  <b>Query:</b>
+  <%= @flash.query %>
+</p>
+
+
+<%= link_to 'Edit', edit_flash_path(@flash) %> |
+<%= link_to 'Back', flashes_path %>

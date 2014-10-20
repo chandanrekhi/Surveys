@@ -1,4 +1,7 @@
 Surveys::Application.routes.draw do
+  resources :flashes
+
+
   mount Surveyor::Engine => "/surveys", :as => "surveyor"
 
   # The priority is based upon order of creation:
@@ -50,7 +53,7 @@ Surveys::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'flashes#index'
 
   # See how all your routes lay out with "rake routes"
 
