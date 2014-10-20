@@ -2306,3 +2306,113 @@ ActionController::RoutingError (No route matches [GET] "/assets/surveyor/images/
 
 
   Rendered /Users/chandan/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-20 16:22:17 +0100
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.11) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.11) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.11) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.11) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /Users/chandan/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (29.0ms)
+
+
+Started GET "/surveys" for 127.0.0.1 at 2014-10-20 16:22:24 +0100
+Processing by SurveyorController#new as HTML
+  [1m[36mSurvey Load (23.4ms)[0m  [1mSELECT "surveys".* FROM "surveys" ORDER BY created_at DESC, survey_version DESC[0m
+  [1m[35mSurveyTranslation Load (6.7ms)[0m  SELECT "survey_translations".* FROM "survey_translations" WHERE "survey_translations"."survey_id" = 1 AND "survey_translations"."locale" = 'en' LIMIT 1
+  Rendered /Users/chandan/.rbenv/versions/1.9.3-p392/lib/ruby/gems/1.9.1/gems/surveyor-1.4.0/app/views/surveyor/new.html.haml within layouts/surveyor_default (273.1ms)
+Completed 200 OK in 1619ms (Views: 1288.9ms | ActiveRecord: 81.5ms)
+
+
+Started GET "/assets/surveyor/reset.css?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor/reset.css - 200 OK (2ms)
+
+
+Started GET "/assets/surveyor/jquery-ui-1.10.0.custom.css?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor/jquery-ui-1.10.0.custom.css - 200 OK (3ms)
+
+
+Started GET "/assets/surveyor/results.css?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor/results.css - 200 OK (2ms)
+
+
+Started GET "/assets/surveyor/ui.slider.extras.css?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor/ui.slider.extras.css - 200 OK (2ms)
+
+
+Started GET "/assets/surveyor/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor/jquery-ui-timepicker-addon.css - 200 OK (1ms)
+
+
+Started GET "/assets/surveyor.css?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor.css - 200 OK (3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /custom.css - 200 OK (1ms)
+
+
+Started GET "/assets/surveyor_all.css?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor_all.css - 200 OK (8ms)
+
+
+Started GET "/assets/surveyor/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor/jquery-ui-timepicker-addon.js - 200 OK (2ms)
+
+
+Started GET "/assets/surveyor/jquery.selectToUISlider.js?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor/jquery.selectToUISlider.js - 200 OK (2ms)
+
+
+Started GET "/assets/surveyor/jquery.surveyor.js?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor/jquery.surveyor.js - 200 OK (3ms)
+
+
+Started GET "/assets/surveyor/jquery.maskedinput.js?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor/jquery.maskedinput.js - 200 OK (2ms)
+
+
+Started GET "/assets/surveyor/jquery-1.9.0.js?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor/jquery-1.9.0.js - 200 OK (3ms)
+
+
+Started GET "/assets/surveyor_all.js?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor_all.js - 200 OK (55ms)
+
+
+Started GET "/assets/surveyor/jquery-ui-1.10.0.custom.js?body=1" for 127.0.0.1 at 2014-10-20 16:22:26 +0100
+Served asset /surveyor/jquery-ui-1.10.0.custom.js - 200 OK (3ms)

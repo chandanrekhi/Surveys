@@ -43,3 +43,4 @@ gem "capistrano", '~>2.15.0'
 end
 # To use debugger
 # gem 'debugger'
+gem 'dalli'

@@ -44,6 +44,7 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     daemons (1.1.9)
+    dalli (2.3.0)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.2.2)
@@ -144,6 +145,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano (~> 2.15.0)
   coffee-rails (~> 3.2.1)
+  dalli
   jquery-rails
   net-ssh (~> 2.6.5)
   rails (= 3.2.11)
